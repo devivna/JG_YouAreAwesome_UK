@@ -22,7 +22,7 @@ class ViewController: UIViewController {
 
     @IBAction func buttonPressed(_ sender: UIButton) {
         
-        var messages = [
+        let messages = [
             "This is Book1",
             "This is Book2",
             "This is Book3",
@@ -31,16 +31,14 @@ class ViewController: UIViewController {
         ]
 
         //let imageName = "Book" + String(imageNumber)
+        imageNumber = Int.random(in: 1...messages.count-1)
         imageView.image = UIImage(named: "Book\(imageNumber)")
-        messageLabel.text = messages[messageNumber]
+        messageLabel.text = messages[imageNumber - 1]
         
-        imageNumber += 1
-        messageNumber += 1
-        
-        if messageNumber == messages.count {
-            imageNumber = 1
-            messageNumber = 0
-        }
+//        if messageNumber == messages.count {
+//            imageNumber = 1
+//            messageNumber = 0
+//        }
         
         
 //        if messageLabel.text == "Hello" {
