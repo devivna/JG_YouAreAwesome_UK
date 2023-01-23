@@ -18,24 +18,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="62" translatesAutoresizingMaskIntoConstraints="NO" id="Equ-aD-TyT">
-                                <rect key="frame" x="46.666666666666657" y="99.333333333333314" width="300" height="678.66666666666674"/>
+                                <rect key="frame" x="46.666666666666657" y="109.33333333333331" width="300" height="658.33333333333348"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cv6-X7-lFk">
-                                        <rect key="frame" x="122.66666666666667" y="0.0" width="54.333333333333329" height="20.333333333333332"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cv6-X7-lFk">
+                                        <rect key="frame" x="122.66666666666667" y="0.0" width="54.333333333333329" height="0.0"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEO-Wu-Og4">
-                                        <rect key="frame" x="112.33333333333334" y="82.333333333333329" width="75" height="34.333333333333329"/>
+                                        <rect key="frame" x="100.33333333333334" y="62.000000000000014" width="99.333333333333343" height="34.333333333333329"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Press me!"/>
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HIQ-29-6Pu"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book1" translatesAutoresizingMaskIntoConstraints="NO" id="drs-Rn-6vN">
-                                        <rect key="frame" x="0.0" y="178.66666666666669" width="300" height="500.00000000000006"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="drs-Rn-6vN">
+                                        <rect key="frame" x="0.0" y="158.33333333333337" width="300" height="500"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="500" id="8rJ-Bn-G51"/>
                                             <constraint firstAttribute="width" constant="300" id="Qbi-w0-qFi"/>
@@ -62,11 +62,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="111" y="-176"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Book1" width="512" height="800"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
