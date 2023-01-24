@@ -11,9 +11,10 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
-    
-    var imageNumber = 1
-    var messageNumber = 0
+
+    var imageNumber = 0
+
+//    var messageNumber = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,10 +29,20 @@ class ViewController: UIViewController {
             "This is Book3",
             "This is Book4",
             "This is Book5",
+            "This is Book6",
+            "This is Book7",
+            "This is Book8",
+            "This is Book9",
+            "This is Book10",
         ]
+        
+        var newImageNumber: Int
 
-        //let imageName = "Book" + String(imageNumber)
-        imageNumber = Int.random(in: 1...messages.count-1)
+        repeat {
+            newImageNumber = Int.random(in: 1...messages.count)
+        } while newImageNumber == imageNumber
+
+        imageNumber = newImageNumber
         imageView.image = UIImage(named: "Book\(imageNumber)")
         messageLabel.text = messages[imageNumber - 1]
         
